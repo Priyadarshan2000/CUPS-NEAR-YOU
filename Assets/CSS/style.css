@@ -1,0 +1,424 @@
+body {
+  margin:0 auto;
+  font-family: 'Roboto', sans-serif;
+  font-weight:400;
+  color:#6b2504;
+  background:url('../Images/bkg_coffeeBeans.jpg') repeat top left;
+}
+#main {
+  margin:0 auto;
+  max-width:1500px;
+}
+.script {
+  font-family: 'Rouge Script', cursive;
+  text-shadow: 2px 2px 5px rgba(107, 37, 4, 0.5);
+  font-size:80px;
+}
+.clearfix::after {
+  content: "";
+    display:block;
+   clear:both;
+}
+.brown {
+  background-color:#e1d3cd !important;
+}
+
+
+header {
+  position:relative;
+  margin:0 0 50px 0;
+}
+#logo {
+  width:33%;
+}
+#logo img {
+  width:33%;
+  max-width:418px;
+}
+.headerLinkLeft a, .headerLinkRight a {
+  font-size:20px;
+  color:#6b2504;
+  line-height:1.4;
+}
+.headerLinkLeft {
+  width:33%;
+  position:absolute;
+  top:30%;
+  left:0px;
+}
+.headerLinkRight {
+  width:33%;
+  position:absolute;
+  top:30%;
+}
+nav {
+  display:none;
+}
+
+
+.row .searchForm {
+  margin:20px 0 0 0;
+}
+.row .searchForm .col {
+  padding:0 20px;
+}
+.dropdown-content li>span {
+  padding:0 16px;
+}
+.input-field.col .dropdown-content [type="checkbox"]+label {
+  padding:0 0 30px 30px;
+}
+.select-wrapper input.select-dropdown {
+  color:#26a69a;
+}
+input[type=text].valid:not(.browser-default) {
+  border-bottom:1px solid #00a098;
+  box-shadow:0 1px 0 0 #00a098;
+}
+#searchTitle {
+  position:relative;
+  height:70px;
+}
+.searchTitle1 {
+  font-size:36px;
+  position: absolute;
+  top:-5px;
+  left:10px;
+}
+.searchTitle2 {
+  font-size:60px;
+  text-shadow: 2px 2px 5px rgba(107, 37, 4, 0.5);
+  position: absolute;
+  top:14px;
+  left:23px;
+}
+
+#mapContainer, #feedbackContainer {
+  border:1px solid #00a098;
+  padding:20px;
+}
+
+#map {
+  min-height:500px;
+  height:100%;
+  width:100%;
+}
+
+
+.weatherTitle {
+  text-shadow: 2px 2px 5px rgba(107, 37, 4, 0.5);
+  font-size: 80px;
+  color:#00a098;s
+}
+.weatherLocation {
+  margin: 10px 0 0 50px;
+}
+.weatherLocation h5 {
+  font-size:24px;
+  margin:0px 0 0 50px;
+}
+.latLong {
+  font-size:14px;
+  display:block;
+}
+.weatherInfo {
+  margin:-20px 0 0 50px;
+}
+.weatherInfo h5 {
+  font-size:30px;
+  font-weight:bold;
+}
+.highTemperature {
+  display:block;
+  margin-top:15px;
+}
+.sunUp {
+  display:block;
+  float:left;
+  margin:15px 20px 0 0;
+}
+.sunDown {
+  display:block;
+  float:left;
+  margin:15px 0 0 0;
+}
+.fa-sun-o, .fa-moon-o {
+  color:#00a098;
+}
+
+
+#mainResults {
+  background: #e1d3cd;
+  position: relative;
+  border: 2px solid #00a098;
+}
+#mainResults:after {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  right: -7px;
+  bottom: -7px;
+  background: #ffffff;
+  z-index: -1;
+}
+#mainResults:before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  background: #e1d3cd;
+  z-index: -100;
+}
+#mainResults.card-panel {
+  transition:none;
+  box-shadow:none;
+}
+#resultsTitle {
+  position:relative;
+  height:110px;
+  border-bottom:2px solid #00a098;
+  margin:0 0 15px 0;
+}
+.resultsTitle1 {
+  font-size:140px;
+  color:#00a098;
+  text-shadow: 2px 2px 5px rgba(107, 37, 4, 0.5);
+  position: absolute;
+  top:-50px;
+  left:30%;
+}
+.resultsTitle2 {
+  font-size:50px;
+  position: absolute;
+  top:50px;
+  left:24.5%;
+}
+#resultsPagnation {
+  font-size:20px;
+  font-weight:300;
+  margin:0 0 20px 0;
+}
+#resultsOf {
+  width:50%;
+  float:left;
+}
+#numResults {
+  font-weight:700;
+}
+#resultPages {
+  width:50%;
+  text-align:right;
+  float:right;
+}
+
+
+#places {
+  margin:0 0 20px 0;
+}
+h5.placeName {
+  font-size:20px;
+  font-weight:bold;
+}
+p.address {
+  font-size:16px;
+  margin:7px 0;
+}
+p.address a {
+  color:#00a098;
+}
+p.address a:hover {
+  font-weight:bold;
+}
+
+
+#feedbackTitle {
+  border-bottom:2px solid #00a098;
+  padding-bottom:20px;
+}
+#feedbackForm {
+  margin-top:30px;
+}
+#stayConnectedTitle h4 {
+  margin-top:0px;
+}
+#contactUs, #socialMedia {
+  margin:20px 0;
+  border-bottom:1px solid #6b2504;
+  padding:0 0 20px 0;
+}
+#contactUs h4.greenLrg {
+  font-size:60px;
+  color:#00a098;
+}
+#contactUs h5 {
+  font-size:20px;
+}
+.socialButton {
+  float:left;
+  margin:5px 15px;
+}
+#us {
+  margin:15px 0 0 0;
+}
+#us .chip {
+  margin: 0 10px;
+}
+
+#inter {
+  display: none;
+}
+
+
+#feedbackContainer h5 {
+  line-height:1.4;
+  margin:30px 0 10px 0;
+}
+
+
+.page-footer {
+  background-color:#00605b;
+  margin-top:70px;
+  padding-top:40px;
+}
+.page-footer .footer-copyright {
+  background-color:rgba(250,250,250,0.08);
+}
+
+
+@media (max-width: 599px) { 
+  #navLrg {
+    display:none;
+  }
+  nav {
+    display:block;
+    background-color:#ffffff;
+    height:120px;
+    margin:0 0 20px 0;
+  }
+  nav.brand-logo {
+    padding-top:10px;
+  }
+  #dropdown1 {
+    width:100%;
+    min-width:160px;
+    top:120px !important;
+    border-top:1px solid #00a098;
+  }
+  ul.left {
+    height:120px;
+    background-color:#00a098;
+  }
+  nav i.material-icons {
+    line-height:120px;
+  }
+  i.right {
+    margin:0px;
+  }
+  
+ 
+  .weatherTitle {
+    font-size: 60px;
+  }
+  .weatherLocation {
+    margin-bottom:15px;
+  }
+  .weatherInfo {
+    border-top:1px solid #00a098;
+    margin:0;
+    width:100%;
+  }
+
+  .row #resultsContainer.col.s12 {
+    width:94%;
+    margin:12px;
+  }
+  .resultsTitle1 {
+    font-size:100px;
+    top:-40px;
+  }
+  .resultsTitle2 {
+    font-size:40px;
+    top:40px;
+  }
+}
+
+
+@media (min-width: 600px) { 
+ 
+  .row #resultsContainer.col.m12 {
+    width:97%;
+    margin:12px;
+  }
+  .resultsTitle1 {
+    font-size:140px;
+    top:-50px;
+    left:40%;
+  }
+  .resultsTitle2 {
+    font-size:50px;
+    top:50px;
+    left:37%;
+  }
+
+  .weatherTitle {
+    font-size: 60px;
+  }
+}
+
+
+@media (min-width: 992px) {
+ 
+  .headerLinkLeft a, .headerLinkRight a {
+    font-size:30px;
+  }
+ 
+  .searchTitle1 {
+    font-size:30px;
+  }
+  .searchTitle2 {
+    font-size:41px;
+  }
+ 
+  .row #resultsContainer.col.l5 {
+    max-width:39%;
+    margin:12px;
+  }
+  .resultsTitle1 {
+    left:30%;
+  }
+  .resultsTitle2 {
+    left:24.5%;
+  }
+}
+
+
+@media (min-width: 1350px) { 
+ 
+.searchTitle1 {
+  font-size:36px;
+}
+.searchTitle2 {
+  font-size:60px;
+}
+ 
+  .row #resultsContainer.col.xl5 {
+    max-width:39%;
+    margin:12px;
+  }
+  #resultsTitle {
+    height:160px;
+  }
+  .resultsTitle1 {
+    font-size:160px;
+    top:-50px;
+    left:30%;
+  }
+  .resultsTitle2 {
+    font-size:60px;
+    top:70px;
+    left:23%;
+  }
+}

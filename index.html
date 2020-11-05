@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cups Near you</title>
+
+<link rel="stylesheet" type="text/css" href="Assets/CSS/reset.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700|Rouge+Script" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="Assets/CSS/style.css">
+
+<link rel="shortcut icon" href="Assets/Images/cup.ico" type="image/x-icon">
+
+
+<script src="https://use.fontawesome.com/3e40addba5.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+</head>
+<body>
+
+<div id="main">
+
+  <header>
+    
+    <nav id="nav-mobile">
+      <div class="nav-wrapper">
+        
+        <ul class="left">
+         
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons right">dehaze</i></a></li>
+      </ul>
+      </div>
+    </nav>
+    
+  </header>
+
+
+  <div class="row">
+    <div class="col s0 m0 l0 xl2"></div>
+    <div class="col s12 m12 l12 xl8 ">
+      <div class="card-panel brown row">
+  
+        <div class="col s12 m6 weatherLocation">
+          <span class="weatherTitle script">Your Weather</span>
+          <br />
+          <h5>Location: <span id="location-lat-long"></span></h5>
+        </div>
+        <div class="col s12 m6 weatherInfo">
+          <h5 id="icon">Weather:</h5>
+          <p id="weather"></p>
+        </div>
+  
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div class="col s0 m0 l0 xl2"></div>
+  </div>
+
+  <div class="row">
+  
+    <div class="col s12 m12 l7 xl7 center-align">
+      <div  id="mapContainer" class="card-panel white">
+        <div id="map"></div>
+      </div>
+    </div>
+  
+    <div id="resultsContainer" class="col s12 m12 l5 xl5">
+      <div id="mainResults" class="card-panel">
+        <div id="resultsTitle">
+          <span class="resultsTitle1 script">cups</span><br /><span class="resultsTitle2">near you</span>
+        </div>
+        
+        <div id="result"></div>
+        <button class="showHide btn waves-effect waves-light">Show more</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        
+      </div>
+      
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container center-align">
+    © 2020 Priyadrshan Ghosh
+    
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+
+ 
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCjIgTt1g9A5RbibI7lN8vsHSlbsnj0rI&callback=initMap&libraries=places">
+</script> 
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment-with-locales.min.js"></script>
+
+
+<script src="Assets/Javascript/app.js"></script>
+<script src="Assets/Javascript/maps.js"></script>
+<script src="Assets/Javascript/weather.js"></script>
+
+</body>
+</html>
